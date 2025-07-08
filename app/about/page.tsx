@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Heart, Users, Shield, Award } from "lucide-react"
+import { Heart, Shield, Award } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -72,7 +72,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">About PetCare</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            We're dedicated to connecting loving pets with caring families, providing comprehensive pet care services, and building a community of responsible pet owners.
+            We&apos;re dedicated to connecting loving pets with caring families, providing comprehensive pet care services, and building a community of responsible pet owners.
           </p>
         </div>
       </section>

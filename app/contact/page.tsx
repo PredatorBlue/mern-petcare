@@ -45,7 +45,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Have questions about pet adoption or our services? We're here to help! Reach out to our team and we'll get back to you as soon as possible.
+            Have questions about pet adoption or our services? We&apos;re here to help! Reach out to our team and we&apos;ll get back to you as soon as possible.
           </p>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default function ContactPage() {
               <CardHeader>
                 <CardTitle>Send us a Message</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Fill out the form below and we&apos;ll get back to you within 24 hours.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -109,7 +109,7 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle>Get in Touch</CardTitle>
                   <CardDescription>
-                    We're here to help with all your pet care needs.
+                    We&apos;re here to help with all your pet care needs.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-6">
@@ -164,7 +164,7 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-semibold text-gray-900">How do I adopt a pet?</h4>
                     <p className="text-gray-600 text-sm">
-                      Browse our available pets, fill out an application, and we'll connect you with the shelter for the adoption process.
+                      Browse our available pets, fill out an application, and we&apos;ll connect you with the shelter for the adoption process.
                     </p>
                   </div>
                   <div>
@@ -208,7 +208,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Get Started?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Whether you're looking to adopt a pet or need our services, we're here to help you every step of the way.
+            Whether you&apos;re looking to adopt a pet or need our services, we&apos;re here to help you every step of the way.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100" asChild>

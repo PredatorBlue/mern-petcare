@@ -81,8 +81,8 @@ class ApiClient {
       body: JSON.stringify(credentials),
     })
 
-    if (response.data?.token) {
-      this.setToken(response.data.token)
+    if (response.data && typeof response.data === "object" && "token" in response.data) {
+      this.setToken((response.data as { token: string }).token)
     }
 
     return response

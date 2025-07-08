@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Heart, MapPin, Calendar, Phone, Mail, ArrowLeft } from "lucide-react"
+import { Heart, MapPin, Phone, Mail, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -17,7 +17,7 @@ const petsData = [
     size: "Large",
     location: "New York, NY",
     image: "/images/pets/buddy.jpg",
-    description: "Buddy is a friendly and energetic Golden Retriever who loves to play fetch and go for long walks. He's great with children and other dogs, and would make an excellent family companion. Buddy is house-trained and knows basic commands.",
+    description: "Buddy is a friendly and energetic Golden Retriever who loves to play fetch and go for long walks. He&apos;s great with children and other dogs, and would make an excellent family companion. Buddy is house-trained and knows basic commands.",
     personality: ["Friendly", "Energetic", "Good with kids", "Good with other dogs"],
     health: ["Vaccinated", "Spayed/Neutered", "Microchipped", "Healthy"],
     needs: ["Regular exercise", "Grooming", "Training"],
@@ -32,7 +32,7 @@ const petsData = [
     size: "Medium",
     location: "Los Angeles, CA",
     image: "/images/pets/luna.jpg",
-    description: "Luna is a gentle and affectionate Persian cat who loves to cuddle and be pampered. She's perfect for apartment living and enjoys quiet environments. Luna is litter-trained and gets along well with other cats.",
+    description: "Luna is a gentle and affectionate Persian cat who loves to cuddle and be pampered. She&apos;s perfect for apartment living and enjoys quiet environments. Luna is litter-trained and gets along well with other cats.",
     personality: ["Gentle", "Affectionate", "Quiet", "Independent"],
     health: ["Vaccinated", "Spayed/Neutered", "Microchipped", "Healthy"],
     needs: ["Regular grooming", "Quiet environment", "Litter box maintenance"],
@@ -47,7 +47,7 @@ const petsData = [
     size: "Large",
     location: "Chicago, IL",
     image: "/images/pets/charlie.jpg",
-    description: "Charlie is a playful and loyal Labrador mix who loves outdoor adventures. He's very intelligent and eager to please, making him great for training. Charlie would be perfect for an active family who enjoys hiking and outdoor activities.",
+    description: "Charlie is a playful and loyal Labrador mix who loves outdoor adventures. He&apos;s very intelligent and eager to please, making him great for training. Charlie would be perfect for an active family who enjoys hiking and outdoor activities.",
     personality: ["Playful", "Loyal", "Intelligent", "Active"],
     health: ["Vaccinated", "Spayed/Neutered", "Microchipped", "Healthy"],
     needs: ["Regular exercise", "Mental stimulation", "Training"],
@@ -69,7 +69,7 @@ export default function PetPage({ params }: PetPageProps) {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">Pet Not Found</h1>
-          <p className="text-gray-600 mb-6">The pet you're looking for doesn't exist.</p>
+          <p className="text-gray-600 mb-6">The pet you&apos;re looking for doesn&apos;t exist.</p>
           <Button asChild>
             <Link href="/adopt">Browse Available Pets</Link>
           </Button>
@@ -219,7 +219,7 @@ export default function PetPage({ params }: PetPageProps) {
             <CardHeader>
               <CardTitle>Adoption Process</CardTitle>
               <CardDescription>
-                Here's what you need to know about adopting {pet.name}
+                Here&apos;s what you need to know about adopting {pet.name}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -236,7 +236,7 @@ export default function PetPage({ params }: PetPageProps) {
                     <span className="text-blue-600 font-bold">2</span>
                   </div>
                   <h4 className="font-semibold mb-2">Meet & Greet</h4>
-                  <p className="text-sm text-gray-600">Schedule a meeting with {pet.name} to ensure it's a good match.</p>
+                  <p className="text-sm text-gray-600">Schedule a meeting with {pet.name} to ensure it&apos;s a good match.</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">

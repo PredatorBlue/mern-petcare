@@ -1,5 +1,6 @@
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api"
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 interface ApiResponse<T = any> {
   data?: T
   message?: string
@@ -81,8 +82,10 @@ class ApiClient {
       body: JSON.stringify(credentials),
     })
 
-    if (response.data?.token) {
-      this.setToken(response.data.token)
+    // Type guard to check if response.data has a token property
+    if (response.data && typeof response.data === "object" && "token" in response.data) {
+      // Type assertion to access token
+      this.setToken((response.data as { token: string }).token)
     }
 
     return response
